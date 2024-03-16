@@ -5,7 +5,7 @@
     <title>User</title>
 </head>
 <body>
-<p th:text="${user.getId()}">VALUE</p>
+<p th:text="${'Id: '+ user.getId()}">VALUE</p>
 <p th:text="${user.getName() + ' ' + user.getSurname()}">VALUE</p>
 <p th:text="${'Age: ' + user.getAge()}">VALUE</p>
 <br/>
