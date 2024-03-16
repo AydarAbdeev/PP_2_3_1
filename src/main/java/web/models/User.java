@@ -7,26 +7,26 @@ import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 
 @Entity
-@Table(name = "User")
+@Table(name = "USERS")
 public class User {
 
     @Id
-    @Column
+    @Column()
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     @NotEmpty(message = "Name is empty")
     @Size(min = 3, max = 30, message = "Name size from 3 to 30")
-    @Column
+    @Column()
     private String name;
 
     @NotEmpty(message = "Surname is empty")
     @Size(min = 3, max = 30, message = "Surname size from 3 to 30")
-    @Column
+    @Column()
     private String surname;
 
     @Min(value = 1, message = "Age must be greater than 0")
-    @Column
+    @Column()
     private int age;
 
     public User() {

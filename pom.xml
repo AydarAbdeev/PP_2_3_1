@@ -11,7 +11,6 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
     <spring.version>5.3.5</spring.version>
     <hibernate.version>5.4.28.Final</hibernate.version>
   </properties>
@@ -99,7 +98,7 @@
   </dependencies>
 
   <build>
-    <finalName>spring-mvc-app1</finalName>
+    <finalName>spring-mvc-hibernate</finalName>
     <pluginManagement>
       <plugins>
         <plugin>
